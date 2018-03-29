@@ -1,7 +1,29 @@
 {
   "root": true,
+  "env": {
+    "jest": true,
+    "browser": true
+  },
   "extends": [
-    "plugin:vue/essential",
+    "plugin:vue/recommended",
     "@vue/airbnb"
-  ]
+  ],
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js"
+        ]
+      }
+    ],
+    "vue/max-attributes-per-line": ["error", {
+      "singleline": 3
+    }],
+    "vue/html-closing-bracket-newline": ["error", {
+      "multiline": "always"
+    }],
+    "vue/html-closing-bracket-spacing": "error",
+    "import/prefer-default-export": "off"
+  }
 }
