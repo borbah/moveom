@@ -1,1 +1,36 @@
-$font-stack: 'Montserrat', sans-serif;
+$font-stack: "Montserrat", sans-serif;
+
+$font-size-s: 12px;
+$font-size-m: 14px;
+$font-size-l: 16px;
+$font-size-xl: 18px;
+
+$heading-size-m: 30px;
+$heading-size-l: 40px;
+$heading-size-xl: 60px;
+$heading-size-xxl: 70px;
+$heading-size-xxxl: 80px;
+
+$color-white: #fcfcfc;
+$color-grey-100: #f6f6f6;
+$color-grey-200: #e1e1e1;
+$color-grey-300: #696969;
+$color-grey-400: #525761;
+$color-grey-500: #3f3c3c;
+
+$z-index-0: 0;
+$z-index-1: 1000;
+$z-index-2: 2000;
+$z-index-3: 3000;
+$z-index-4: 4000;
+$z-index-5: 5000;
+$z-index-6: 6000;
+$z-index-7: 7000;
+$z-index-8: 8000;
+$z-index-9: 9000;
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+$tablet: (min-width: $tablet-width);
+$desktop: (min-width: $desktop-width);
