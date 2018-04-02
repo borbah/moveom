@@ -3,7 +3,7 @@ import vueSmoothScroll from 'vue-smooth-scroll';
 import App from './App.vue';
 import './registerServiceWorker';
 
-Vue.config.productionTip = true;
+Vue.config.productionTip = false;
 Vue.use(vueSmoothScroll);
 
 new Vue({
