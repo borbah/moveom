@@ -39,6 +39,10 @@
     transition: .3s ease-out;
     box-shadow: 0 20px 30px -20px rgba($color-grey-400, .3);
 
+    @media #{$superwide} {
+      background-position: 50% 80%;
+    }
+
     &--1 {
       background-image: url("../../assets/img/sequence/sequence_1.jpg");
     }

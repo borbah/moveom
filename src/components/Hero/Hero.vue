@@ -30,7 +30,6 @@ export default {
       const width = window.innerWidth;
       const piece = width / 13;
       this.sequence = `background--${Math.ceil(e.clientX / piece)}`;
-      console.log(Math.floor(e.clientX / piece));
     }, 30),
   },
 };

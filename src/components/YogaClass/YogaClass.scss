@@ -77,4 +77,11 @@
       }
     }
   }
+
+  @media #{$superwide} {
+    .header {
+      width: 25%;
+      margin-right: -250px;
+    }
+  }
 }
