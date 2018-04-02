@@ -8,6 +8,28 @@
   .background {
     @include flex-centered();
 
+    &::after {
+      position: absolute;
+      z-index: $z-index--1;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      content:
+        url("../../assets/img/sequence/sequence_1.jpg")
+        url("../../assets/img/sequence/sequence_2.jpg")
+        url("../../assets/img/sequence/sequence_3.jpg")
+        url("../../assets/img/sequence/sequence_4.jpg")
+        url("../../assets/img/sequence/sequence_5.jpg")
+        url("../../assets/img/sequence/sequence_6.jpg")
+        url("../../assets/img/sequence/sequence_7.jpg")
+        url("../../assets/img/sequence/sequence_8.jpg")
+        url("../../assets/img/sequence/sequence_9.jpg")
+        url("../../assets/img/sequence/sequence_10.jpg")
+        url("../../assets/img/sequence/sequence_11.jpg")
+        url("../../assets/img/sequence/sequence_12.jpg")
+        url("../../assets/img/sequence/sequence_13.jpg");
+    }
+
     position: relative;
     width: 100%;
     height: 100%;
