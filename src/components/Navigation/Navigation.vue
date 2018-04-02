@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <img class="logo" src="@/assets/img/moveom-logo.png">
+    <a v-smooth-scroll href="#main"><img class="logo" src="@/assets/img/moveom-logo.png"></a>
     <div :class="[{open}, 'hamburger']" @click="toggleMenu">
       <span />
       <span />
@@ -8,17 +8,17 @@
     </div>
     <transition name="fade">
       <div v-if="open" class="menu menu--mobile">
-        <a>yoga class</a>
-        <a>teacher</a>
-        <a>one-on-one</a>
-        <a>contact</a>
+        <a v-smooth-scroll href="#yogaclass" @click="toggleMenu">yoga class</a>
+        <a v-smooth-scroll href="#teacher" @click="toggleMenu">teacher</a>
+        <a v-smooth-scroll href="#oneonone" @click="toggleMenu">one-on-one</a>
+        <a v-smooth-scroll href="#contact" @click="toggleMenu">contact</a>
       </div>
     </transition>
     <div class="menu menu--desktop">
-      <a>yoga class</a>
-      <a>teacher</a>
-      <a>one-on-one</a>
-      <a>contact</a>
+      <a v-smooth-scroll href="#yogaclass">yoga class</a>
+      <a v-smooth-scroll href="#teacher">teacher</a>
+      <a v-smooth-scroll href="#oneonone">one-on-one</a>
+      <a v-smooth-scroll href="#contact">contact</a>
     </div>
   </div>
 </template>

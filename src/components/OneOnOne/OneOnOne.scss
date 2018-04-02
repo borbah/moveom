@@ -1,0 +1,101 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  width: 100%;
+  padding: 25px;
+
+  @media #{$tablet} {
+    height: auto;
+    padding: 200px 25px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-index--1;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    content: "";
+    background-image: url("../../assets/img/one-on-one_01.jpg");
+    background-position: 50%;
+    background-size: cover;
+
+    @media #{$tablet} {
+      display: none;
+    }
+  }
+}
+
+.text {
+  @media #{$tablet} {
+    width: 50%;
+    margin-right: 50px;
+  }
+
+  @media #{$desktop} {
+    width: 40%;
+  }
+
+  @media #{$wide} {
+    width: 500px;
+    margin-right: 0;
+  }
+}
+
+.heading {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media #{$tablet} {
+    height: auto;
+  }
+
+  h2 {
+    margin-bottom: 100px;
+    font-size: $heading-size-l;
+    color: $color-white;
+
+    @media #{$tablet} {
+      margin: 0;
+      font-size: $heading-size-xl;
+      color: $color-grey-400;
+    }
+  }
+}
+
+.content {
+  p {
+    margin-bottom: 20px;
+    font-size: $font-size-l;
+    font-weight: $font-weight-light;
+  }
+
+  @media #{$wide} {
+    width: 350px;
+    margin-top: 50px;
+  }
+}
+
+.photo {
+  display: none;
+
+  @media #{$tablet} {
+    display: block;
+    width: 300px;
+    height: auto;
+  }
+
+  @media #{$desktop} {
+    width: 450px;
+  }
+
+  @media #{$wide} {
+    width: 550px;
+  }
+}

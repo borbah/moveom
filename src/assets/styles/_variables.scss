@@ -5,6 +5,11 @@ $font-size-m: 14px;
 $font-size-l: 16px;
 $font-size-xl: 18px;
 
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 800;
+
 $heading-size-m: 30px;
 $heading-size-l: 40px;
 $heading-size-xl: 60px;
@@ -17,7 +22,9 @@ $color-grey-200: #e1e1e1;
 $color-grey-300: #696969;
 $color-grey-400: #525761;
 $color-grey-500: #3f3c3c;
+$color-steel: #999ea9;
 
+$z-index--1: -1;
 $z-index-0: 0;
 $z-index-1: 1000;
 $z-index-2: 2000;
@@ -30,7 +37,9 @@ $z-index-8: 8000;
 $z-index-9: 9000;
 
 $tablet-width: 768px;
-$desktop-width: 1024px;
+$desktop-width: 1150px;
+$wide-width: 1350px;
 
 $tablet: (min-width: $tablet-width);
 $desktop: (min-width: $desktop-width);
+$wide: (min-width: $wide-width);

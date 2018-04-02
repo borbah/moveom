@@ -1,8 +1,8 @@
 <template>
   <a :href="href">
-    <div class="wrapper">
+    <div :class="[{ reverse }, 'wrapper']">
       <p class="text"><slot>let's move</slot></p>
-      <MoveIcon class="icon" />
+      <MoveIcon :class="[{ reverse }, 'icon']" />
     </div>
   </a>
 </template>
@@ -17,7 +17,15 @@ export default {
   props: {
     href: {
       type: String,
-      required: true,
+      default: null,
+    },
+    clickAction: {
+      type: Function,
+      default: null,
+    },
+    reverse: {
+      type: Boolean,
+      default: false,
     },
   },
 };
