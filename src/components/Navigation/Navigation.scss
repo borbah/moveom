@@ -4,11 +4,13 @@
   display: flex;
   width: 100%;
   padding: 25px;
+  background: $color-white;
   align-items: center;
   justify-content: space-between;
 
   @media #{$desktop} {
     padding: 30px 50px;
+    background-color: transparent;
   }
 }
 
@@ -51,6 +53,7 @@
 
     @media #{$desktop} {
       display: flex;
+      align-items: center;
     }
 
     a {
@@ -111,6 +114,37 @@
       &:nth-child(3) {
         transform: rotate(-45deg) translateY(-8px);
       }
+    }
+  }
+}
+
+.schedule {
+  button {
+    cursor: pointer;
+    width: 130px;
+    height: 50px;
+    padding: 5px;
+    font-size: $font-size-l;
+    font-weight: $font-weight-semibold;
+    line-height: $font-size-l;
+    border: 1px solid $color-grey-400;
+    border-radius: 0;
+    color: $color-grey-400;
+    background: transparent;
+    transition: .3s ease-out;
+    box-shadow: 0 15px 20px -10px rgba($color-grey-400, .2);
+
+    @media #{$desktop} {
+      width: 100px;
+      height: 30px;
+      padding: 5px;
+      font-size: $font-size-s;
+      line-height: $font-size-s;
+    }
+
+    &:hover {
+      transform: translateY(3px);
+      box-shadow: 0 15px 20px -10px rgba($color-grey-500, .4);
     }
   }
 }

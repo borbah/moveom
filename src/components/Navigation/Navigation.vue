@@ -12,6 +12,9 @@
         <a v-smooth-scroll href="#teacher" @click="toggleMenu">teacher</a>
         <a v-smooth-scroll href="#oneonone" @click="toggleMenu">one-on-one</a>
         <a v-smooth-scroll href="#contact" @click="toggleMenu">contact</a>
+        <a href="https://www.facebook.com/moveomyoga" target="_blank" class="schedule">
+          <button>schedule</button>
+        </a>
       </div>
     </transition>
     <div class="menu menu--desktop">
@@ -19,6 +22,9 @@
       <a v-smooth-scroll href="#teacher">teacher</a>
       <a v-smooth-scroll href="#oneonone">one-on-one</a>
       <a v-smooth-scroll href="#contact">contact</a>
+      <a href="https://www.facebook.com/moveomyoga" target="_blank" class="schedule">
+        <button>schedule</button>
+      </a>
     </div>
   </div>
 </template>
