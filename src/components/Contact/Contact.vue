@@ -13,7 +13,7 @@
       </a>
       <a class="info" href="tel:+447523589329">
         <PhoneIcon class="icon" />
-        <span>7523 589 329</span>
+        <span>07523 589 329</span>
       </a>
       <a class="info" href="https://goo.gl/iRNdTr" target="_blank">
         <PlaceIcon class="icon" />
